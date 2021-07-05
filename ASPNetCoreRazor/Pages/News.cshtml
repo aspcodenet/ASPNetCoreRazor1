@@ -1,0 +1,14 @@
+﻿@page
+@model ASPNetCoreRazor.Pages.NewsModel
+@{
+}
+
+
+
+<h1>Artiklar</h1>
+
+@foreach (var article in Model.Items)
+{
+    <h3>@article.Title</h3>
+    <p>@article.Description</p>
+}
