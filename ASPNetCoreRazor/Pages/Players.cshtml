@@ -1,0 +1,13 @@
+﻿@page
+@model ASPNetCoreRazor.Pages.PlayersModel
+@{
+}
+
+
+
+<ul>
+    @foreach (var playerName in Model.Players)
+    {
+        <li>@playerName</li>
+    }
+</ul>
