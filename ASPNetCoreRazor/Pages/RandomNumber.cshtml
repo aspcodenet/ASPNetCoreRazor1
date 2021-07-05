@@ -1,0 +1,28 @@
+﻿@page
+@using System.Runtime.InteropServices
+@model ASPNetCoreRazor.Pages.RandomNumberModel
+@{
+}
+
+
+@*Om random numret > 200000 ska du skriva ut (i en h3) ”Stort nummer”
+    d. Annars Om random numret > 100000 ska du skriva ut (i en h3) ”Ganska Stort nummer”
+    e. Annars ska du skriva ut (i en h3) ”litet nummer”*@
+
+
+
+@if (Model.RandomTal > 200000)
+    {
+        <h3>Stort nummer</h3>
+    }
+    else if (Model.RandomTal > 100000)
+    {
+        <h3>Ganska stort nummer</h3>
+    }
+    else
+    {
+        <h3>Litet nummer</h3>
+    }
+
+
+<p>Tiden är @Model.Tid</p>
